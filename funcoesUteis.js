@@ -1,9 +1,13 @@
-export function createNonSortedArray(size) {
+export function createInvertedArray(size) {
   const array = [];
   for(let i = size; i > 0; i--) {
     array.push(i)
   }
   return array
+}
+
+function createRandomArray(size) {
+  
 }
 
 export function swap(array, a, b){
@@ -12,5 +16,5 @@ export function swap(array, a, b){
   array[b] = temp;
 }
 
-const ordenacao = { swap, createNonSortedArray };
+const ordenacao = { swap, createInvertedArray };
 export default ordenacao;
