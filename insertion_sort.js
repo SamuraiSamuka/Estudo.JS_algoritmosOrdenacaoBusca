@@ -8,7 +8,6 @@ function insertionSort(array) {
     for (let j = 0; j < sortedArray.length; j++) {
       if (array[i] <= sortedArray[j]){
         sortedArray.splice(j, 0, array[i]);
-        console.log(sortedArray)
         break;
       }
     }
